@@ -8,7 +8,7 @@ function App() {
     <div className="h-screen w-screen bg-[#181a26] flex flex-col text-center p-16 text-slate-200 items-center">
       <img src={logo} alt="logo" className="w-[480px]" />
       <div className="flex flex-col border-1 border-red-500 justify-center gap-4 m-12">
-        <LinkedButton text={"English Menu"} link={english_menu} />
+        <LinkedButton text={"English Menu"} link={"/english-menu"} />
         <LinkedButton text={"Chinese Menu / 中文菜单"} link={chinese_menu} />
       </div>
     </div>
