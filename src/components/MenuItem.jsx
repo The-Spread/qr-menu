@@ -16,14 +16,14 @@ export default function MenuItem({
       <div className="flex items-center">
         <div className="font-bold">{itemName}</div>
         <img
+          src={recommendedIcon}
+          className={`h-4 ml-2 ${recommended ? "" : "hidden"}`}
+        />
+        <img
           src={vegetarianIcon}
           className={`h-4 ml-2 ${vegetarian ? "" : "hidden"}`}
         />
         <img src={spicyIcon} className={`h-4 ml-2 ${spicy ? "" : "hidden"}`} />
-        <img
-          src={recommendedIcon}
-          className={`h-4 ml-2 ${recommended ? "" : "hidden"}`}
-        />
         <div className="ml-auto">{price}</div>
       </div>
       <div className="italic text-gray-700">{description}</div>

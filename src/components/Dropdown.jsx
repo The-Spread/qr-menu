@@ -5,6 +5,7 @@ import downArrow from "../assets/arrow.svg";
 
 export default function Dropdown({
   category_title,
+  available_time,
   menu,
   vegetarianFilter,
   spicyFilter,
@@ -26,6 +27,7 @@ export default function Dropdown({
       <div className="hover:cursor-pointer" onClick={() => setOpened(!opened)}>
         <div className="flex flex-row items-center h-12">
           <div className="text-xl">{category_title}</div>
+          <div className="text-xs mt-2 ml-2 italic">{available_time}</div>
           <img
             src={downArrow}
             className={`h-2 ml-auto ${opened ? "rotate-180" : "rotate-0"}`}

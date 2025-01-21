@@ -9,6 +9,7 @@ import {
   sandwichMenu,
   mainsMenu,
 } from "../assets/constants";
+import Filter from "../components/Filter";
 
 export default function EnglishMenu() {
   const [vegetarianFilter, setVegetarianFilter] = useState(false);
@@ -16,54 +17,51 @@ export default function EnglishMenu() {
 
   return (
     <div className="p-8">
-      Filters
-      <div
-        className="flex gap-2"
-        onClick={() => setVegetarianFilter(!vegetarianFilter)}
-      >
-        <input
-          name="vegetarianFilter"
-          type="checkbox"
-          checked={vegetarianFilter}
-        />
-        <label htmlFor="vegetarianFilter">Vegetarian</label>
-      </div>
-      <div className="flex gap-2" onClick={() => setSpicyFilter(!spicyFilter)}>
-        <input name="spicyFilter" type="checkbox" checked={spicyFilter} />
-        <label htmlFor="spicyFilter">Spicy</label>
-      </div>
+      <Filter
+        vegetarianFilter={vegetarianFilter}
+        setVegetarianFilter={setVegetarianFilter}
+        spicyFilter={spicyFilter}
+        setSpicyFilter={setSpicyFilter}
+      />
+
       <Dropdown
         category_title={"Breakfast"}
+        available_time={"until 10:45am"}
         menu={breakfastMenu}
         vegetarianFilter={vegetarianFilter}
         spicyFilter={spicyFilter}
       />
       <Dropdown
         category_title={"Snacks"}
+        available_time={"all-day"}
         menu={snackMenu}
         vegetarianFilter={vegetarianFilter}
         spicyFilter={spicyFilter}
       />
       <Dropdown
         category_title={"Salad"}
+        available_time={"11am onwards"}
         menu={saladMenu}
         vegetarianFilter={vegetarianFilter}
         spicyFilter={spicyFilter}
       />
       <Dropdown
         category_title={"Italian"}
+        available_time={"11am onwards"}
         menu={italianMenu}
         vegetarianFilter={vegetarianFilter}
         spicyFilter={spicyFilter}
       />
       <Dropdown
         category_title={"Sandwiches & Burgers"}
+        available_time={"11am onwards"}
         menu={sandwichMenu}
         vegetarianFilter={vegetarianFilter}
         spicyFilter={spicyFilter}
       />
       <Dropdown
         category_title={"Mains"}
+        available_time={"11am onwards"}
         menu={mainsMenu}
         vegetarianFilter={vegetarianFilter}
         spicyFilter={spicyFilter}
