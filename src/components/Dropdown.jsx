@@ -22,7 +22,7 @@ export default function Dropdown({
   });
 
   return (
-    <div className="w-[480px] pb-2">
+    <div className="max-w-[480px] pb-2">
       {/* clicking portion */}
       <div className="hover:cursor-pointer" onClick={() => setOpened(!opened)}>
         <div className="flex flex-row items-center h-12">
