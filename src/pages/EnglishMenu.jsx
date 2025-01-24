@@ -24,48 +24,50 @@ export default function EnglishMenu() {
         setSpicyFilter={setSpicyFilter}
       />
 
-      <Dropdown
-        category_title={"Breakfast"}
-        available_time={"until 10:45am"}
-        menu={breakfastMenu}
-        vegetarianFilter={vegetarianFilter}
-        spicyFilter={spicyFilter}
-      />
-      <Dropdown
-        category_title={"Snacks"}
-        available_time={"all-day"}
-        menu={snackMenu}
-        vegetarianFilter={vegetarianFilter}
-        spicyFilter={spicyFilter}
-      />
-      <Dropdown
-        category_title={"Salad"}
-        available_time={"11am onwards"}
-        menu={saladMenu}
-        vegetarianFilter={vegetarianFilter}
-        spicyFilter={spicyFilter}
-      />
-      <Dropdown
-        category_title={"Italian"}
-        available_time={"11am onwards"}
-        menu={italianMenu}
-        vegetarianFilter={vegetarianFilter}
-        spicyFilter={spicyFilter}
-      />
-      <Dropdown
-        category_title={"Sandwiches & Burgers"}
-        available_time={"11am onwards"}
-        menu={sandwichMenu}
-        vegetarianFilter={vegetarianFilter}
-        spicyFilter={spicyFilter}
-      />
-      <Dropdown
-        category_title={"Mains"}
-        available_time={"11am onwards"}
-        menu={mainsMenu}
-        vegetarianFilter={vegetarianFilter}
-        spicyFilter={spicyFilter}
-      />
+      <div className="pt-4">
+        <Dropdown
+          category_title={"Breakfast"}
+          available_time={"until 10:45am"}
+          menu={breakfastMenu}
+          vegetarianFilter={vegetarianFilter}
+          spicyFilter={spicyFilter}
+        />
+        <Dropdown
+          category_title={"Snacks"}
+          available_time={"all-day"}
+          menu={snackMenu}
+          vegetarianFilter={vegetarianFilter}
+          spicyFilter={spicyFilter}
+        />
+        <Dropdown
+          category_title={"Salad"}
+          available_time={"11am onwards"}
+          menu={saladMenu}
+          vegetarianFilter={vegetarianFilter}
+          spicyFilter={spicyFilter}
+        />
+        <Dropdown
+          category_title={"Italian"}
+          available_time={"11am onwards"}
+          menu={italianMenu}
+          vegetarianFilter={vegetarianFilter}
+          spicyFilter={spicyFilter}
+        />
+        <Dropdown
+          category_title={"Sandwiches & Burgers"}
+          available_time={"11am onwards"}
+          menu={sandwichMenu}
+          vegetarianFilter={vegetarianFilter}
+          spicyFilter={spicyFilter}
+        />
+        <Dropdown
+          category_title={"Mains"}
+          available_time={"11am onwards"}
+          menu={mainsMenu}
+          vegetarianFilter={vegetarianFilter}
+          spicyFilter={spicyFilter}
+        />
+      </div>
     </div>
   );
 }
