@@ -30,7 +30,7 @@ export default function MenuItem({
       {addOns.map((addOn) => {
         return (
           <div className="flex">
-            <div className="italic text-gray-700">{addOn.addOnName}</div>
+            <div className="italic text-gray-700">{"+ " + addOn.addOnName}</div>
             <div className="ml-auto italic text-gray-700">{addOn.price}</div>
           </div>
         );
