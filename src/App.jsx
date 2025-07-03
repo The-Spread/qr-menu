@@ -13,8 +13,8 @@ function App() {
         <FileButton text={"Chinese Menu / 中文菜单"} link={chinese_menu} />
         <LinkedButton
           text={"Interactive Menu"}
-          link={`${import.meta.env.BASE_URL}english-menu`}
-        />{" "}
+          link={`${import.meta.env.BASE_URL}/english-menu`}
+        />
       </div>
     </div>
   );
