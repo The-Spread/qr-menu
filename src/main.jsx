@@ -8,7 +8,7 @@ import EnglishMenu from "./pages/EnglishMenu.jsx";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
-      <Route path="/qr-menu" element={<App />} />
+      <Route path="/" element={<App />} />
       <Route path="/english-menu" element={<EnglishMenu />} />
     </Routes>
   </BrowserRouter>
