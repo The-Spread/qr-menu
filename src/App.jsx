@@ -11,7 +11,10 @@ function App() {
       <div className="flex flex-col border-1 border-red-500 justify-center gap-4 m-12">
         <FileButton text={"English Menu"} link={english_menu} />
         <FileButton text={"Chinese Menu / 中文菜单"} link={chinese_menu} />
-        <LinkedButton text={"Interactive Menu"} link={"/english-menu"} />
+        <LinkedButton
+          text={"Interactive Menu"}
+          link={`${import.meta.env.BASE_URL}english-menu`}
+        />{" "}
       </div>
     </div>
   );
