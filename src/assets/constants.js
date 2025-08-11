@@ -1394,6 +1394,7 @@ export const mainsMenu = [
     price: "$19.90",
     description:
       "7oz Picahna (rump cap) seared medium rare by default. Served with black pepper sauce, and a double portion of shoestring fries. Minimum wait time of 15 minutes.",
+    addOns: [],
   },
 ];
 
