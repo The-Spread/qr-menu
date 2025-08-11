@@ -35,7 +35,7 @@ export default function Filter({
           onClick={() => setSpicyFilter(!spicyFilter)}
         >
           <input name="spicyFilter" type="checkbox" checked={spicyFilter} />
-          <label htmlFor="spicyFilter">Spicy</label>
+          <label htmlFor="spicyFilter">Non-Spicy Items</label>
         </div>
       </div>
     </>

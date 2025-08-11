@@ -8,6 +8,10 @@ import {
   italianMenu,
   sandwichMenu,
   mainsMenu,
+  bakedGoodsMenu,
+  fusionMenu,
+  asianMenu,
+  beverageMenu,
 } from "../assets/constants";
 import Filter from "../components/Filter";
 
@@ -33,6 +37,13 @@ export default function EnglishMenu() {
           spicyFilter={spicyFilter}
         />
         <Dropdown
+          category_title={"Baked Goods"}
+          available_time={"all-day till sold out"}
+          menu={bakedGoodsMenu}
+          vegetarianFilter={vegetarianFilter}
+          spicyFilter={spicyFilter}
+        />
+        <Dropdown
           category_title={"Snacks"}
           available_time={"all-day"}
           menu={snackMenu}
@@ -54,6 +65,20 @@ export default function EnglishMenu() {
           spicyFilter={spicyFilter}
         />
         <Dropdown
+          category_title={"Fusion"}
+          available_time={"11am onwards"}
+          menu={fusionMenu}
+          vegetarianFilter={vegetarianFilter}
+          spicyFilter={spicyFilter}
+        />
+        <Dropdown
+          category_title={"Asian"}
+          available_time={"11am onwards"}
+          menu={asianMenu}
+          vegetarianFilter={vegetarianFilter}
+          spicyFilter={spicyFilter}
+        />
+        <Dropdown
           category_title={"Sandwiches & Burgers"}
           available_time={"11am onwards"}
           menu={sandwichMenu}
@@ -67,6 +92,13 @@ export default function EnglishMenu() {
           vegetarianFilter={vegetarianFilter}
           spicyFilter={spicyFilter}
         />
+        {/* <Dropdown
+          category_title={"Beverages"}
+          available_time={"all day"}
+          menu={beverageMenu}
+          vegetarianFilter={vegetarianFilter}
+          spicyFilter={spicyFilter}
+        /> */}
       </div>
     </div>
   );
