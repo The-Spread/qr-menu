@@ -1346,6 +1346,7 @@ export const mainsMenu = [
       {
         addOnName: "Double Up Chicken",
         price: "+$5.50",
+        showPlusSign: true,
       },
     ],
   },
@@ -1361,6 +1362,7 @@ export const mainsMenu = [
       {
         addOnName: "Upsize Fish (1.5 portions)",
         price: "+$2.50",
+        showPlusSign: true,
       },
     ],
   },
@@ -1391,13 +1393,7 @@ export const mainsMenu = [
     recommended: true,
     price: "$19.90",
     description:
-      "7oz Picahna (rump cap) seared medium rare by default. Served with black pepper sauce, and a double portion of shoestring fries.",
-    addOns: [
-      {
-        addOnName: "Minimum wait time of 15 minutes.",
-        price: "",
-      },
-    ],
+      "7oz Picahna (rump cap) seared medium rare by default. Served with black pepper sauce, and a double portion of shoestring fries. Minimum wait time of 15 minutes.",
   },
 ];
 
