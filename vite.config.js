@@ -6,5 +6,3 @@ export default defineConfig({
   plugins: [react()],
   base: "/qr-menu/",
 });
-
-// testing actions
