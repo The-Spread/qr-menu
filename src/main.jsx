@@ -6,10 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import EnglishMenu from "./pages/EnglishMenu.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/qr-menu" element={<App />} />
-      <Route path="/qr-menu/english-menu" element={<EnglishMenu />} />
-    </Routes>
-  </BrowserRouter>
+  // <BrowserRouter>
+  //   <Routes>
+  //     <Route path="/qr-menu" element={<App />} />
+  //     <Route path="/qr-menu/english-menu" element={<EnglishMenu />} />
+  //   </Routes>
+  // </BrowserRouter>
+  <EnglishMenu />
 );
